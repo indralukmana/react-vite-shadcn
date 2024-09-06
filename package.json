@@ -27,6 +27,7 @@
 		"@radix-ui/react-switch": "^1.1.0",
 		"@radix-ui/react-tabs": "^1.1.0",
 		"@radix-ui/react-toggle": "^1.1.0",
+		"@tanstack/react-router": "^1.56.1",
 		"class-variance-authority": "^0.7.0",
 		"clsx": "^2.1.1",
 		"lucide-react": "^0.438.0",
@@ -37,6 +38,8 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.8.3",
+		"@tanstack/router-devtools": "^1.56.1",
+		"@tanstack/router-plugin": "^1.56.1",
 		"@types/node": "^22.5.4",
 		"@types/react": "^18.3.3",
 		"@types/react-dom": "^18.3.0",
