@@ -12,6 +12,7 @@ This template provides a minimal setup to get React working in Vite with HMR, Ty
 - Dark mode support
 - Biome for linting and formatting
 - Lefthook for Git hooks
+- TanStack Router for routing
 
 ## Getting Started
 
@@ -41,8 +42,11 @@ This template provides a minimal setup to get React working in Vite with HMR, Ty
 
 - `src/`: Source files
   - `components/`: React components
+    - `ui/`: shadcn/ui components
+    - `layout/`: Layout components
+    - `dark-mode/`: Dark mode components
   - `lib/`: Utility functions
-  - `App.tsx`: Main application component
+  - `routes/`: TanStack Router route components
   - `main.tsx`: Application entry point
 - `public/`: Static assets
 - `index.html`: HTML entry point
@@ -54,11 +58,36 @@ This template provides a minimal setup to get React working in Vite with HMR, Ty
 - `tsconfig.json`: TypeScript configuration
 - `biome.json`: Biome configuration
 - `lefthook.yml`: Lefthook configuration
+- `components.json`: shadcn/ui configuration
 
 ## Customization
 
-This template is set up with a basic structure and some example components. The `App.tsx` file contain basic kitchen sink of components.
+This template is set up with a basic structure and some example components. The `src/routes/index.lazy.tsx` file contains a basic kitchen sink of components.
 
 ## Expanding the Biome configuration
 
 The project uses Biome for linting and formatting. You can expand the configuration in the `biome.json` file. Then expand as needed based on <https://biomejs.dev/>
+
+## Routing
+
+This template uses TanStack Router for routing. You can find route definitions in the `src/routes/` directory.
+
+## Dark Mode
+
+Dark mode support is included out of the box. You can toggle between light and dark mode using the `ModeToggle` component in the header.
+
+## Styling
+
+This template uses Tailwind CSS for styling. The main CSS file is located at `src/index.css`, which includes the base Tailwind directives and custom CSS variables for theming.
+
+## Components
+
+shadcn/ui components are located in the `src/components/ui/` directory. You can customize these components or add new ones as needed.
+
+## Development Workflow
+
+This template includes Lefthook for Git hooks. The pre-commit hook runs Biome checks and type checking before allowing commits. You can customize the Git hooks in the `lefthook.yml` file.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
